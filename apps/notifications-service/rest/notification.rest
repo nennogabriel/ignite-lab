@@ -1,0 +1,12 @@
+POST http://localhost:3000/notifications
+Content-Type: application/json
+
+{
+ "recipientId": "{{$guid}}",
+ "content": "Hello World",
+ "category": "message"
+}
+
+###
+GET http://localhost:3000/notifications
+
